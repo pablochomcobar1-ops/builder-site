@@ -30,16 +30,15 @@ export default function Hero() {
       <div className="sticky top-0 h-screen w-full overflow-hidden">
         {/* 3D canvas */}
         <div className="absolute inset-0">
-          {/*<Canvas
+          <Canvas
             shadows
             dpr={[1, 1.5]}
             frameloop={inView ? "always" : "never"}
             camera={{ position: [8, 3, 12], fov: 35 }}
           >
             <Building progress={scrollYProgress} />
-          </Canvas> */}
+          </Canvas>
         </div>
-
         {/* Intro text */}
         <div className="pointer-events-none absolute inset-0 mx-auto flex max-w-7xl flex-col justify-start px-6 pt-28 md:justify-center md:pt-0">
           <motion.div
